@@ -1,0 +1,262 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+
+h1{
+  letter-spacing:-.2px;
+  font-size: 40px;
+  line-height: 1.5em;
+  color:#ffffff;
+  margin: 0;
+  /* margin: 100px 500px 70px 30px; */
+}
+
+h1 strong{
+  color: #026fff;
+}
+
+h2{
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.hero{
+  height: 300px;
+  background-color: #1d2127;
+  /* background-image: url('../images/hero.jpg'); */
+  /* background-size: 500px 300px; */
+  /* background-repeat: no-repeat; */
+  /* background-position-x: right; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-image{
+ object-fit: cover;
+ margin-top: 3px;
+}
+
+.portfolio{
+  background: #fafafa;
+ padding: 20px;
+}
+
+.project{
+  border: 1px solid gray;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 15px;
+  padding: 20px;
+  background: #ffffff;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-title{
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px 0;
+}
+
+.project-course,
+.project-date,
+.project-url{
+  margin: 10px 0;
+}
+.project-description{
+  font-size: 20px;
+}
+
+.project-details{
+  width: 500px;
+}
+
+.project-imageContainer{
+  width: 500px;
+}
+
+.header{
+  background-color: #1d2127;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+}
+
+ol,
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+figure{
+  margin: 0;
+}
+
+.header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.menu{
+  /* display: flex; */
+  height: inherit;
+}
+
+.header ol{
+  display: flex;
+  height: inherit;
+}
+
+.header ol li{
+  display: flex;
+  height: inherit;
+}
+.header a{
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 10px;
+}
+
+.footer{
+  background-color:#1b2027;
+  color:#fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:63px;
+}
+
+.footer img{
+  vertical-align: middle;
+}
+
+.footer a{
+  color: #fff;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.event-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.event-list-title{
+  padding: 20px;
+}
+
+.event img{
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+.event{
+  margin: 10px;
+  width: 480px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background-color: #f4fbff;
+}
+
+.event-detail{
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: #ffffff;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+.event-description{
+  text-align: left;
+}
+
+.event-url{
+  border: solid 1px #0273ff;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.contact{
+  background-color: #056fff;
+  color: #ffffff;
+  height: 150px;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.social-link{
+  margin: 0 10px;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-size: 50px 50px;
+}
+
+.social-link.facebook{
+  background-image: url('../images/facebook.svg');
+}
+.social-link.twitter{
+  background-image: url('../images/twitter.svg');
+}
+.social-link.instagram{
+  background-image: url('../images/instagram.svg');
+}
+.social-link.github{
+  background-image: url('../images/github.svg');
+}
+
+.form-email input{
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  background-image: url('../images/envelope.svg');
+  background-size: 15px 15px ;
+  background-position-y: center;
+  background-position-x: 5px;
+  background-repeat: no-repeat;
+  padding: 5px 20px 5px 25px;
+}
+
+.form-email button{
+  background-color: #056fff;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 20px;
+  display: block;
+  margin-top: 5px;
+  border-style: solid;
+}
+
+.container{
+  /* border: 1px solid red; */
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
