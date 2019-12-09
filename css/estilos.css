@@ -179,8 +179,8 @@ figure{
   object-fit: cover;
 }
 .event{
-  margin: 10px;
-  width: 480px;
+  margin: 1%;
+  width: 48%;
   border-radius: 10px;
   flex-shrink: 0;
   overflow: hidden;
@@ -274,7 +274,7 @@ figure{
 
 
  @media screen and (max-width: 1024px) {
-   
+
  }
 
 
@@ -326,11 +326,23 @@ figure{
   .project-description{
     font-size: .8em;
   }
+.event img{
+  width: 100%;
+}
+  .event{
+    width: auto;
+    flex-shrink: initial;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .project-details{
     font-size: 12px;
+  }
+  .event-detail{
+    /* 1em= 16px */
+    margin: -2em .5em .5em ;
+    padding: 1em;
   }
 }
 
