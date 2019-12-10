@@ -269,6 +269,11 @@ figure{
   height: inherit;
   flex-wrap: inherit;
 }
+.html-video{
+  /* width: 100%; */
+  max-width: 100%;
+  height: auto;
+}
  /* desktop first que empiece el MQ desde el más grande*/
 
 
