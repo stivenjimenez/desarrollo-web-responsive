@@ -322,6 +322,22 @@ figure{
   width: 100%;
   height: 100%;
 }
+
+.burger-button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, .8);
+  display: block;
+  position: fixed;
+  color:white;
+  line-height: 40px;
+  text-align: center;
+  left: 5px;
+  top: 5px;
+  z-index: 4;
+  display: none;
+}
  /* desktop first que empiece el MQ desde el más grande*/
 
 
@@ -333,7 +349,7 @@ figure{
     height: auto;
     position: relative;
     overflow: hidden;
-    padding: 2em; 
+    padding: 2em;
   }
   .hero-image{
    position:absolute;
@@ -352,6 +368,9 @@ figure{
 
 
 @media screen and (max-width: 767px) {
+  .burger-button{
+    display: block;
+  }
   .header{
     display: block;
     height: auto;
@@ -365,9 +384,30 @@ figure{
   .header a{
     flex:1;
     justify-content: center;
+    height: 40px;
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: .5em;
   }
   .header .logo {
     text-align: center;
+  }
+  .menu{
+    position: fixed;
+    background: rgba(2, 111, 255, .9);
+    z-index: 3;
+    width: 100vw;
+    /* height: 100vh; */
+    bottom:0;
+    display: flex;
+    left: -100vw;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+  }
+  .menu.is-active{
+    left: 0;
   }
   .project{
     display: block;
